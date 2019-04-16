@@ -1,0 +1,11 @@
+﻿問題
+① double (*func[5])(double a);
+② char (*(*x[3])())[5];
+③ void (*xyz(int, void (*func)(int)))(int);
+	*xyz(int, void (*func)(int))
+		int, void (*func)(int)
+
+解答
+① funcはdouble型を返す関数(引数はdouble型)へのポインタの配列(要素数5)
+② xはchar型の配列(要素数5)へのポインタを返す関数(引数はvoid型)へのポインタの配列(要素数3)
+③ xyzはvoid型を返す関数(引数はint型)へのポインタを返す関数(引数はint型とvoid型を返す関数func(引数はint)へのポインタ)

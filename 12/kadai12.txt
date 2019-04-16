@@ -1,0 +1,20 @@
+$ make 
+gcc    -c -o stack.o stack.c
+gcc    -c -o que.o que.c
+gcc    -c -o main.o main.c
+gcc stack.o que.o main.o -o test-prog
+$ ./test-prog
+num1=12, num2=345
+stack size=2 free=98
+queue size=2 free=97
+From stack: num1=345, num2=12
+From queue: num1=12, num2=345
+
+str=stack & queue program
+stack: size=21 free=79
+From stack: margorp eueuq & kcats
+queue: size=21 free=78
+From queue: stack & queue program
+$ make clean
+rm *.o test-prog
+$ 
